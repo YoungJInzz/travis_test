@@ -6,10 +6,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t cinerium -f Dockerfile.prod .
+  - docker build -t myapp -f Dockerfile.prod .
 
 script:
-  - docker run cinerium
+  - docker run myapp
 
 deploy:
   provider: elasticbeanstalk
